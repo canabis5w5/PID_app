@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PID</string>
+    <string name="temperature">temperature</string>
+    <string name="text_state_hold">Температура №1</string>
+    <string name="text_state">Температура №2</string>
+    <string name="text_state2_hold">text_state2_hold</string>
+    <string name="text_state2">text_state2</string>
+    <string name="update">update</string>
+    <string name="Save">Save</string>
+    <string name="SET">SET</string>
+    <string name="IP_ADRESS">IP ADRESS</string>
+    <string name="set_temp1">Set temperature 1</string>
+    <string name="set_temp2">Set temperature 2</string>
+</resources>

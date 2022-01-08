@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="173dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#0000FF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/temperature2"
+        app:layout_constraintHorizontal_bias="0.014"
+        app:layout_constraintStart_toStartOf="@+id/text_state1"
+        app:layout_constraintTop_toBottomOf="@+id/text_state1" />
+
+    <Button
+        android:id="@+id/bSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/Save"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/text_state2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/graf"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/ipText"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:cursorVisible="true"
+        android:editable="true"
+        android:focusableInTouchMode="true"
+        android:hint="@string/IP_ADRESS"
+        android:textColor="#6536B8"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bSave"
+        app:layout_constraintStart_toStartOf="@+id/text_state1"
+        app:layout_constraintTop_toBottomOf="@+id/button_set1"
+        app:layout_constraintVertical_bias="0.946" />
+
+    <TextView
+        android:id="@+id/text_state1"
+        android:layout_width="176dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/text_state_hold"
+        android:textColor="@color/purple_700"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/text_state2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <TextView
+        android:id="@+id/text_state2"
+        android:layout_width="171dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/text_state"
+        android:textColor="@color/purple_500"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <TextView
+        android:id="@+id/temperature2"
+        android:layout_width="171dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#00FF00"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_state2"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_state2" />
+
+    <Button
+        android:id="@+id/button_set1"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/SET"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/text_set_temp1"
+        app:layout_constraintStart_toStartOf="@+id/text_state1"
+        app:layout_constraintTop_toBottomOf="@+id/text_set_temp1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button_set2"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/SET"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/text_state2"
+        app:layout_constraintStart_toStartOf="@+id/text_set_temp2"
+        app:layout_constraintTop_toBottomOf="@+id/text_set_temp2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/text_state1_hold"
+        android:layout_width="176dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#0000FF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_state2_hold"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/text_state1"
+        app:layout_constraintTop_toBottomOf="@+id/temperature" />
+
+    <TextView
+        android:id="@+id/text_state2_hold"
+        android:layout_width="169dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#09E612"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_state2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temperature2" />
+
+    <TextView
+        android:id="@+id/text_set_temp1"
+        android:layout_width="178dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:cursorVisible="true"
+        android:editable="true"
+        android:focusableInTouchMode="true"
+        android:hint="@string/set_temp1"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_set_temp2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/text_state1"
+        app:layout_constraintTop_toBottomOf="@+id/text_state1_hold" />
+
+    <TextView
+        android:id="@+id/text_set_temp2"
+        android:layout_width="176dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:cursorVisible="true"
+        android:editable="true"
+        android:enabled="true"
+        android:focusableInTouchMode="true"
+        android:hint="@string/set_temp2"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_state2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_state2_hold" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graf"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/ipText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_set1" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/graf"
+        app:layout_constraintEnd_toStartOf="@+id/button_set2"
+        app:layout_constraintStart_toEndOf="@+id/button_set1"
+        app:layout_constraintTop_toBottomOf="@+id/text_set_temp1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
